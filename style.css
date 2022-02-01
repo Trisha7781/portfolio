@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap");
+
+.nav-item {
+  margin: 0px 30px;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+}
+.about {
+  background-image: linear-gradient(
+    99deg,
+    
+    rgba(115, 18, 81, 1) 10.6%,
+    rgba(28, 28, 28, 1) 118%
+  );
+
+  color: white;
+  min-height: 100vh;
+}
+#navstyle {
+  background-image: linear-gradient(
+    99deg,
+    rgba(115, 18, 81, 1) 10.6%,
+    rgba(28, 28, 28, 1) 118%
+  );
+  width: 100vw;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+.about h1 {
+  padding: 50px 0px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 80px;
+  /* background-color: aliceblue; */
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.dis-image {
+  width: 30vw;
+
+  height: 30vw;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+.about-content {
+  font-size: large;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 30px;
+  font-family: "Crimson Pro", serif;
+}
+.education {
+  background-image: linear-gradient(
+    99deg,
+    rgba(115, 18, 81, 1) 10.6%,
+    rgba(28, 28, 28, 1) 118%
+  );
+  color: white;
+  min-height: 100vh;
+}
+
+.card-container {
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.edu-card {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.555);
+  text-align: center;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2rem;
+  box-shadow: inset;
+  margin: 2rem;
+}
+.education h3 {
+  padding: 15px;
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+  padding-top: 40px;
+  text-emphasis: bold;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.edu-text {
+  color: aliceblue;
+  padding-top: 50px;
+  font-family: "Crimson Pro", serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skills {
+  background-image: linear-gradient(
+    99deg,
+    rgba(115, 18, 81, 1) 10.6%,
+    rgba(28, 28, 28, 1) 118%
+  );
+  color: white;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 12rem;
+  --fg: rgba(255, 255, 255, 0.473);
+  --bg: rgba(0, 0, 0, 0.555);
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      rgba(0, 0, 0, 0.555) 80%,
+      transparent 0 99.9%,
+      rgba(0, 0, 0, 0.555) 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  margin-bottom: 30px;
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+/* 
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.inline-block {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  margin-left: 5rem;
+  margin-top: 7rem;
+  margin-right: 5rem;
+  padding-bottom: 7rem;
+  display: inline-block;
+  justify-content: center;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+.skill-text {
+  text-align: center;
+  padding: 0.5rem;
+  font-family: "Crimson Pro", serif;
+  font-size: 1.5rem;
+}
+
+.contact {
+  background-image: linear-gradient(
+    99deg,
+    rgba(115, 18, 81, 1) 10.6%,
+    rgba(28, 28, 28, 1) 118%
+  );
+
+  color: white;
+  min-height: 100vh;
+}
+
+input {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+::-webkit-input-placeholder .input-line:focus + ::input-placeholder {
+  color: #fff;
+}
+
+.highlight {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.highlight:hover {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.spacing {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: 120px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.input-line:focus {
+  outline: none;
+  border-color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.ghost-round {
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.65);
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-size: 19px;
+  font-size: 1.2rem;
+  font-family: roboto;
+  font-weight: 300;
+  line-height: 2.5em;
+  margin-top: auto;
+  margin-bottom: 25px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.ghost-round:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.input-line {
+  background: none;
+  margin-bottom: 10px;
+  line-height: 2.4em;
+  color: #fff;
+  font-family: roboto;
+  font-weight: 300;
+  letter-spacing: 0px;
+  letter-spacing: 0.02rem;
+  font-size: 19px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-fields {
+  margin-top: 25px;
+}
+.form {
+  background: rgba(0, 0, 0, 0.555);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin-top: 70px;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+  font-family: "Crimson Pro", serif;
+}
+
+.title {
+  display: block;
+  font-family: "Crimson Pro", serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
+.secondaryTitle {
+  color: grey;
+}
+
+.name {
+  background-color: rgba(255, 255, 255, 0.082);
+  color: white;
+}
+
+.email {
+  background-color: rgba(255, 255, 255, 0.082);
+  color: white;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.082);
+  overflow: hidden;
+  height: 10rem;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: #810c43be;
+  font-size: 20px;
+  font-family: "Crimson Pro", serif;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(99, 3, 48, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-radius: 0%;
+}
+
+.education h1 {
+  padding-top: 50px;
+  text-align: center;
+  padding-left: 50px;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.skills h1 {
+  padding-top: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 1245px) {
+  .edu-card {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1245px) {
+  .edu-card {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .skills {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .dis-image {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 40vw;
+    height: 40vw;
+  }
+  .about-content {
+    font-size: large;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    font-family: "Crimson Pro", serif;
+  }
+
+  .about {
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: transparent;
+  }
+
+  .about-container {
+    width: 100vw;
+    background-color: antiquewhite;
+    background-image: linear-gradient(
+      99deg,
+      rgba(115, 18, 81, 1) 10.6%,
+      rgba(28, 28, 28, 1) 118%
+    );
+  }
+  .education {
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: transparent;
+  }
+  .edu-container {
+    width: 100vw;
+    background-image: linear-gradient(
+      99deg,
+      rgba(115, 18, 81, 1) 10.6%,
+      rgba(28, 28, 28, 1) 118%
+    );
+  }
+  .skills {
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: transparent;
+  }
+  .skills-container {
+    width: 100vw;
+    background-image: linear-gradient(
+      99deg,
+      rgba(115, 18, 81, 1) 10.6%,
+      rgba(28, 28, 28, 1) 118%
+    );
+  }
+  .contact {
+    width: 100%;
+    overflow-x: hidden;
+
+    background-color: transparent;
+  }
+  .contact-container {
+    width: 100vw;
+    background-image: linear-gradient(
+      99deg,
+      rgba(115, 18, 81, 1) 10.6%,
+      rgba(28, 28, 28, 1) 118%
+    );
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .dis-image {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    height: 60vw;
+    margin-bottom: 20px;
+  }
+  .about h1 {
+    /* padding: 50px 0px; */
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+    /* background-color: aliceblue; */
+    align-items: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .contact {
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .form {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-content {
+    font-size: 16px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15px 5px;
+    font-family: "Crimson Pro", serif;
+  }
+  .edu-card {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .contact {
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .skills {
+    align-items: center;
+  }
+}
+
+
+.e-c{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#edu{
+  margin-left: 50%;
+  transform: translateX(-52.5%);
+}
+
+#sk{
+  width: 100vw;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ib{
+  width: 100px;
+  height: 100px;
+  /* background-color: rgb(233, 140, 140); */
+  display: inline-block;
+  z-index: 1000;
+  width: fit-content;
+  height: fit-content;
+  margin: 2.5rem 4.5rem;
+}
